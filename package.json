@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/fahdrahali/todo_list/issues"
   },
-  "homepage": "https://github.com/fahdrahali/todo_list#readme"
+  "homepage": "https://github.com/fahdrahali/todo_list#readme",
+  "devDependencies": {
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
 }
