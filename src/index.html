@@ -6,16 +6,18 @@
   </head>
   <body>
     <section class="container">
-      <span>Today's To Do</span>
-
-      <input
-        type="text"
-        id="description"
-        name="description"
-        placeholder="Add to your list..."
-      />
-      <ul id="task-list"></ul>
-      <button id="btn-clear">Clear all completed</button>
+      <ul id="task-list">
+        <li><span>Today's To Do</span></li>
+        <li id="input-task">
+          <input
+            type="text"
+            id="description"
+            name="description"
+            placeholder="Add to your list..."
+          />
+        </li>
+        <li id="btn"><button id="btn-clear">Clear all completed</button></li>
+      </ul>
     </section>
   </body>
 </html>
