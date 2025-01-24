@@ -1,16 +1,5 @@
 import "./style.css";
 
-const tasks = [
-  { description: "wash the dishes", completed: true, index: 2 },
-  {
-    description: "complete To Do list project",
-    completed: false,
-    index: 4,
-  },
-  { description: "read a book", completed: true, index: 3 },
-  { description: "go to the gym", completed: false, index: 1 },
-];
-
 const sortTasksByIndex = (tasks) => {
   return tasks.sort((x, y) => x.index - y.index);
 };
