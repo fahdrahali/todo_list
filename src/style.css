@@ -30,10 +30,15 @@ li {
   border-top: none;
 }
 
+#input-task {
+  padding: 0 16px;
+}
+
 #task-list input {
   border: none;
   padding: 12px 16px;
   font-style: italic;
+  outline: none;
 }
 
 #btn {
@@ -42,9 +47,25 @@ li {
   justify-content: center;
 }
 
-button {
+#btn-clear {
   border: none;
   color: rgb(151, 150, 150);
   background-color: rgb(244, 242, 242);
   padding: 16px;
+}
+
+#btn-enter {
+  background-color: #fff;
+  border: none;
+}
+
+#description {
+  width: 100%;
+  background: url("../assets/images/enter.png") no-repeat right;
+}
+
+#title span {
+  width: 100%;
+  background: url("../assets/images/update.png") no-repeat right;
+  padding-right: 16px;
 }
