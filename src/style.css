@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 body {
@@ -33,17 +34,11 @@ li {
 #task {
   display: grid;
   grid-template-columns: 0.5fr 11fr 0.5fr;
+  color: black;
 }
 
 #input-task {
   padding: 0 16px;
-}
-
-#task-list input {
-  border: none;
-  padding: 12px 16px;
-  font-style: italic;
-  outline: none;
 }
 
 #btn {
@@ -66,7 +61,12 @@ li {
 
 #description {
   width: 100%;
+  border: none;
+  padding: 12px 16px;
+  font-style: italic;
+  outline: none;
   background: url("../assets/images/enter.png") no-repeat right;
+  color: #000;
 }
 
 #title span {
