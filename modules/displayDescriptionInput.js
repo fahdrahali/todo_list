@@ -1,4 +1,3 @@
-import Icon from "../assets/images/enter.png";
 import displayTasks from "./displayTasks";
 import { addTask } from "./tasks";
 
@@ -9,14 +8,7 @@ const displayDiscriptionInput = () => {
   descriptionInput.name = "description";
   descriptionInput.placeholder = "Add to your list...";
 
-  const enterButton = document.createElement("button");
-
-//   const enterIcon = new Image();
-//   enterIcon.src = Icon;
-//   enterButton.append(enterIcon);
-//   enterButton.id = "btn-enter";
   document.getElementById("input-task").append(descriptionInput);
-//   document.getElementById("input-task").append(enterButton);
 
   document
     .getElementById("description")
