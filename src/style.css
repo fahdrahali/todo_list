@@ -30,6 +30,11 @@ li {
   border-top: none;
 }
 
+#task {
+  display: grid;
+  grid-template-columns: 0.5fr 11fr 0.5fr;
+}
+
 #input-task {
   padding: 0 16px;
 }
@@ -71,5 +76,5 @@ li {
 }
 
 #menu-dots {
-  align-self: end;
+  justify-self: end;
 }
