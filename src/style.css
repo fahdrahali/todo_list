@@ -69,3 +69,7 @@ li {
   background: url("../assets/images/update.png") no-repeat right;
   padding-right: 16px;
 }
+
+#menu-dots {
+  align-self: end;
+}

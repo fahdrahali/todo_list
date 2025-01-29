@@ -1,3 +1,5 @@
+import dotsIcon from "../assets/images/menuDots.png";
+
 const sortTasksByIndex = (tasks) => {
   return tasks.sort((x, y) => x.index - y.index);
 };
@@ -14,8 +16,15 @@ const displayTasks = (tasks) => {
     const label = document.createElement("label");
     label.for = checkBox.id;
     label.textContent = task.description;
+
+    // add a menu dots icon
+    const menuDot = new Image();
+    menuDot.src = dotsIcon;
+    menuDot.id = "menu-dots";
+    menuDot.alt = "menu dots";
     li.append(checkBox);
     li.append(label);
+    li.append(menuDot);
     const list = document.getElementById("task-list");
     list.insertBefore(li, document.getElementById("btn"));
   });
