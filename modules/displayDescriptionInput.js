@@ -2,6 +2,8 @@ import displayTasks from "./displayTasks";
 import { addTask } from "./tasks";
 
 const displayDiscriptionInput = () => {
+  console.log("input task.....");
+
   const descriptionInput = document.createElement("input");
   descriptionInput.type = "text";
   descriptionInput.id = "description";
@@ -13,7 +15,7 @@ const displayDiscriptionInput = () => {
   document
     .getElementById("description")
     .addEventListener("keypress", (event) => {
-      if (event === "Enter") {
+      if (event.key === "Enter") {
         event.preventDefault();
         let tasks = JSON.parse(localStorage.getItem("tasks"));
         if (!tasks) tasks = [];

@@ -7,11 +7,15 @@ const addTask = (tasks, description) => {
   return tasks;
 };
 
-const removeTask = (index) => {
-  tasks = tasks.filter((task) => {
-    index !== task.index;
-  });
-  return task;
+const updateTask = (tasks, task) => {
+  return tasks.splice(task.index, 1, task);
 };
 
-export { addTask, removeTask };
+const removeTask = (index, tasks) => {
+  let newTasks = tasks.filter((task) => {
+    return index !== task.index;
+  });
+  return newTasks;
+};
+
+export { addTask, updateTask, removeTask };
