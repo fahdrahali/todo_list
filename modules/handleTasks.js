@@ -1,12 +1,17 @@
+import binIcon from "../assets/images/trash.png";
+
 const updateTask = () => {
   document.querySelectorAll("#menu-dots").forEach((task) =>
     task.addEventListener("click", () => {
       task.parentElement.setAttribute("style", "background-color: yellow");
-      console.log(
-        task.parentElement
-          .querySelector(".input-task-item")
-          .setAttribute("disabled", true)
-      );
+
+      const img = document.getElementById("menu-dots");
+      img.src = binIcon;
+      img.id = "trash";
+      img.alt = "trash";
+
+      task.parentElement.append(trash);
+
       task.parentElement
         .querySelector(".input-task-item")
         .setAttribute("style", "background-color: yellow");
