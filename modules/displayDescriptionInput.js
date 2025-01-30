@@ -13,7 +13,7 @@ const displayDiscriptionInput = () => {
   document
     .getElementById("description")
     .addEventListener("keypress", (event) => {
-      if (event.key === "Enter") {
+      if (event === "Enter") {
         event.preventDefault();
         let tasks = JSON.parse(localStorage.getItem("tasks"));
         if (!tasks) tasks = [];

@@ -9,6 +9,10 @@ body {
   background-color: rgb(244, 242, 242);
 }
 
+input {
+  outline: none;
+}
+
 .container {
   width: 60%;
   background-color: #fff;
@@ -78,3 +82,4 @@ li {
 #menu-dots {
   justify-self: end;
 }
+

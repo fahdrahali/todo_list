@@ -1,5 +1,6 @@
 import displayDiscriptionInput from "../modules/displayDescriptionInput";
 import displayTasks from "../modules/displayTasks";
+import clickHamburgButton from "../modules/handleTasks";
 import "./style.css";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -8,4 +9,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   displayDiscriptionInput();
   displayTasks(tasks);
+  clickHamburgButton();
 });

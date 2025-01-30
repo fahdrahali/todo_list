@@ -16,11 +16,11 @@ const displayTasks = (tasks) => {
 
     // create input task
     const inputTask = document.createElement("input");
-    inputTask.type = 'text';
-    inputTask.id = 'input-task-item';
-    inputTask.name = 'input-task-item';
+    inputTask.type = "text";
+    inputTask.classList.add("input-task-item");
+    inputTask.name = "input-task-item";
     inputTask.value = task.description;
-    inputTask.setAttribute('disabled', true)
+    inputTask.setAttribute("disabled", true);
 
     // add a menu dots icon
     const menuDot = new Image();
